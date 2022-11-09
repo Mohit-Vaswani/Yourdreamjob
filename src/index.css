@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Condensed:ital@1&display=swap');
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 1rem;
+  --font-semi: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*===== Colores =====*/
+:root{
+  --first-color: #1f2937;
+  --second-color: #818cf8;
+  --third-color: #111827;
+  --fourth-color: #ffffff;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+  --body-font: 'Inter', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*===== Margenes =====*/
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*===== z index =====*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--fourth-color);
+  background: var(--third-color);
+}
+h1,h2,p{
+  margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+  padding: var(--mb-1) var(--mb-6) var(--mb-1) var(--mb-1);
+}
+
+.main-heading{
+    margin: var(--mb-6);
+    text-align: center;
+    line-height: 2;
+}
+
+.main-heading h1{
+    color: var(--second-color);
+}
+
+/* Card List */
+
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card Item */
+
+.cardItem{
+    width:350px;
+    height: 130px;
+    padding: var(--mb-1) 0 0 var(--mb-6);
+    margin: var(--mb-3);
+    background: var(--first-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: var(--mb-1);
+    font-size: 25px;
+    color: var(--second-color);
+}
+
+.cardItem a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+/* Responsive design for mobiles */
+
+@media screen and (max-width: 580px) {
+  nav{
+    flex-direction: column;
+  }
+
+  input{
+    position: relative;
+    top: 13rem;
+    margin: 0 auto;
+  }
+
+.main-heading {
+    margin: var(--mb-2) 0 6rem;
+    /* line-height: 2; */
+    gap: 2rem;
+}
+}
+
+@media screen and (max-width: 422px) {
+  .main-heading h1 {
+    line-height: 1.3;
+}
+
+.cardItem {
+  padding: var(--mb-1) 0 0 var(--mb-2);
+}
 }
