@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "../careerData";
 import { FcFlashOn } from "react-icons/fc";
 import { BsArrowRightShort } from "react-icons/bs";
+import ReactGA from "react-ga";
 
 function CompanyCard() {
   const [query, setQuery] = useState("");
+
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname);
+  })
+
   return (
     <>
       <main>

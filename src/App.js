@@ -1,9 +1,7 @@
 import CompanyCard from "./Components/CompanyCard";
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-215720867-1', [options]);
-
-ReactGA.pageview(window.location.pathname);
+ReactGA.initialize('UA-215720867-1');
 
 function App() {
   return (

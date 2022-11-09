@@ -1,6 +1,6 @@
 const careerData = [
   { id: 0, Title: "1 mg", Link: "https://www.1mg.com/jobs" },
-  { id: 1, Title: "314e Corporation", Link: "https://www.314e.com/" },
+  { id: 1, Title: "314e Corporation", Link: "https://www.314e.com/company/job-openings/" },
   { id: 2, Title: "3i Infotech", Link: "https://www.3i-infotech.com/careers/" },
   { id: 3, Title: "[24]7.ai", Link: "https://www.247.ai/career-search" },
   { id: 4, Title: "Acaira", Link: "https://www.acaira.com/Career.aspx" },
