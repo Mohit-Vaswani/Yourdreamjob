@@ -1522,6 +1522,7 @@ const careerData = [
 {id:608,Title: 'ZoomCar', Link: 'https://www.zoomcar.com/careers'},
 {id:609,Title: 'ZS', Link: 'https://jobs.zs.com/all/jobs'},
 {id:610,Title: 'Zynga', Link: 'https://www.zynga.com/jobs/careers/'},
+{id:611,Title: 'Pinterest', Link: 'https://www.pinterestcareers.com/'},
 ];
 
 
