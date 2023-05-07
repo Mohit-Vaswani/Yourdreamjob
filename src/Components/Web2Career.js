@@ -52,7 +52,7 @@ function CompanyCard() {
           <div id="search-btn">
             <input
               type="text"
-              placeholder="Search Your Dream Job"
+              placeholder="Search Your Dream Company"
               className="search"
               onChange={(e) => setQuery(e.target.value)}
               />
